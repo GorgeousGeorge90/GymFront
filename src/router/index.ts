@@ -4,12 +4,22 @@ const routes = [
   {
     path: '/',
     name: 'Login',
-    component: () => import('/src/views/LoginView.vue')
+    component: () => import('/src/views/LoginView.vue'),
   },
   {
     path: '/main',
     name: 'Main',
-    component: () => import('/src/views/MainView.vue')
+    component: () => import('/src/views/MainView.vue'),
+  },
+  {
+    path: '/sessions',
+    name: 'Sessions',
+    component: () => import('/src/views/SessionView.vue'),
+  },
+  {
+    path: '/progress',
+    name: 'Progress',
+    component: () => import('/src/views/ProgressView.vue'),
   },
 ]
 
