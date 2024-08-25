@@ -9,11 +9,15 @@ declare module 'vue' {
   export interface GlobalComponents {
     AppFooter: typeof import('./components/AppFooter.vue')['default']
     AppHeader: typeof import('./components/common/AppHeader.vue')['default']
+    ExecisesList: typeof import('./components/ExecisesList.vue')['default']
+    ExerciseItem: typeof import('./components/ExerciseItem.vue')['default']
+    ExercisesList: typeof import('./components/ExercisesList.vue')['default']
     Header: typeof import('./components/common/Header.vue')['default']
     HelloWorld: typeof import('./components/HelloWorld.vue')['default']
     LoginForm: typeof import('./components/LoginForm.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     UserNavigation: typeof import('./components/UserNavigation.vue')['default']
+    UserSessions: typeof import('./components/UserSessions.vue')['default']
   }
 }
