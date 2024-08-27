@@ -21,6 +21,11 @@ const routes = [
     name: 'Progress',
     component: () => import('/src/views/ProgressView.vue'),
   },
+  {
+    path: '/diet',
+    name: 'DietPlan',
+    component: () => import('/src/views/DietView.vue'),
+  },
 ]
 
 const router = createRouter({
