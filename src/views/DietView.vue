@@ -1,11 +1,11 @@
 <template>
   <v-container>
     <app-header />
-    Progress
+    Diet Plan
   </v-container>
 </template>
 
-<script setup>
+<script setup lang="ts">
 
 </script>
 

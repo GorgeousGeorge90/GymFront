@@ -34,6 +34,11 @@
       title: 'Progress',
       url: '/progress',
     },
+    {
+      id: 4,
+      title: 'Diet plan',
+      url: '/diet',
+    },
   ]
 
   // methods
