@@ -26,6 +26,9 @@
 
 import router from "@/router";
 import axios from "axios";
+import { useAlertsStore } from "@/store/alertStore";
+
+const state = useAlertsStore()
 
 const userData = reactive({
   login: '',
@@ -53,16 +56,17 @@ const fetchAllUsers = async () => {
 }
 
 const logIn = () => {
-  if (userData.login && userData.password) {
-    let currentUser = users.find(({ name }) => name === userData.login)
-    if (currentUser && currentUser.password === userData.password) {
-      router.push({
-        name: 'Main'
-      })
-    }
-  } else {
-    alert('Error')
-  }
+  state.setAlert('error', 'Произошла непредвиденная ошибка!');
+  // if (userData.login && userData.password) {
+  //   let currentUser = users.find(({ name }) => name === userData.login)
+  //   if (currentUser && currentUser.password === userData.password) {
+  //     router.push({
+  //       name: 'Main'
+  //     })
+  //   }
+  // } else {
+  //   state.setAlert('Ошибка!');
+  // }
 };
 
 </script>
